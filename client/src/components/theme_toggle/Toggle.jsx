@@ -27,7 +27,7 @@ function ToggleButton() {
   return (
     <button
       aria-label="Toggle Dark Mode"
-      className="p-2 rounded bg-gray-300 text-gray-800 dark:bg-gray-700 dark:text-gray-200 transition-colors"
+      className="p-2 rounded bg-gray-300 text-gray-800 dark:bg-gray-700 dark:text-gray-200 transition-colors shadow-md shadow-gray-300 dark:shadow-gray-900"
       onClick={() => setisdark(!isdark)}
     >
       {isdark ? <MoonIcon /> : <SunIcon />}
