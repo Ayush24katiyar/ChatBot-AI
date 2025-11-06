@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+/* Define custom dark mode variant selector */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Define CSS variables for light and dark themes */
+:root {
+  --color-bg: #ffffff;
+  --color-text: #000000;
+}
+
+.dark {
+  --color-bg: #181818; 
+  --color-text: #f7fafc;
+}
+
+/* Apply CSS variables for background and text */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
