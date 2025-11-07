@@ -1,19 +1,14 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Layout from './components/layout/layout'
-import ChatInputContainer from './components/chat/ChatInputContainer'
+import  WelcomeScreen  from './components/welcome_text/WelcomeScreen'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-   <Layout >
-    <div className="flex items-center justify-center h-full">
-        <ChatInputContainer />
-      </div>
-   </Layout >
+    <Layout>
+      {/* Welcome message - centered */}
+      <WelcomeScreen />
+    </Layout>
   )
 }
 

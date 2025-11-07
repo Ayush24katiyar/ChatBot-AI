@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { PlusIcon, WrenchScrewdriverIcon, MicrophoneIcon } from '@heroicons/react/24/outline';
+import { PaperClipIcon, WrenchScrewdriverIcon, MicrophoneIcon } from '@heroicons/react/24/outline';
 
 function ChatInput() {
   const [message, setMessage] = useState('');
@@ -17,7 +17,7 @@ function ChatInput() {
 
   return (
     <div className="w-full max-w-3xl mx-auto">
-      <div className="relative flex flex-col bg-white dark:bg-gray-800 rounded-3xl border border-gray-300 dark:border-gray-700 focus-within:border-gray-400 dark:focus-within:border-gray-600 transition-all">
+      <div className="relative flex flex-col bg-white dark:bg-gray-800 rounded-3xl border border-gray-300 dark:border-gray-700 focus-within:border-gray-400 dark:focus-within:border-gray-600 transition-all shadow-lg shadow-gray-300 dark:shadow-gray-800">
         
         {/* Input field on top */}
         <textarea
@@ -38,7 +38,7 @@ function ChatInput() {
               className="p-2 text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-full transition-all"
               aria-label="Add"
             >
-              <PlusIcon className="w-5 h-5" />
+              <PaperClipIcon className="w-5 h-5" />
             </button>
             
             <button 
@@ -62,7 +62,7 @@ function ChatInput() {
       </div>
       
       {/* Helper text */}
-      <p className="text-xs text-gray-400 dark:text-gray-500 text-center mt-2">
+      <p className="text-xs text-gray-400 dark:text-gray-500 text-center  mt-4">
         Press Enter to send, Shift + Enter for new line
       </p>
     </div>
